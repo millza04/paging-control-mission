@@ -25,7 +25,6 @@ with open(("input/" + inputFile)) as f:
     for line in f:
         time, satId, rMax, yMax, rMin, yMin, value, comp = breakString(line)
         comp.replace("\n", "")
-        print(comp)
         # Load data in and check the alert
         # Returns the string to be output as alert, if no alert return empty string
         result = checkAlert.addAndCheckSatData(satData(time, satId, rMax, yMax, rMin, yMin, False, False, value, comp))

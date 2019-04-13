@@ -22,6 +22,33 @@ Implementation Description:
 
 
 Class Tree:
+-classes
+	- checker
+		- alertChecker
+			- Checks the alert being sent in by comparing it to other alerts loaded
+			in previously in the masterList object. This itself contains list of
+			alerts which are cleared over time to reduce the max amount of data
+			that is stored
+		- satData
+			- Contains the satData class which is the main way in which information
+			is stored
+	- helpers
+		- helper
+			- Contains basic helper classes
+		- lineBreaker
+			- Breaks a line into chunks to be processed
+	- menu
+		- mainMenu
+			- Loads the menu options that prompt a user for input	
+			- Original problem description is entered as (3, 5, 0, 0)
+	- writer
+		- fileWrite
+			- Writes the output object given, to the output file given
+-input
+	- Where input files are stored
+-output
+	- Where output is sent to
+-main
 
 
 

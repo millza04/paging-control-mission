@@ -80,7 +80,7 @@ class checkAlert:
         if (redAlert == True):
             return (self.masterList[satId][len(self.masterList[satId]) - 1], "red")
         if (yellowAlert == True):
-            return (satId, "yellow")
+            return (self.masterList[satId][len(self.masterList[satId]) - 1], "yellow")
         else:
             return ""
 
